@@ -59,7 +59,7 @@ body {
   width: 46px;
   height: 46px;
   border-radius: 14px;
-  background: linear-gradient(135deg, #afc1dc 0%, #e2e5ed 100%);
+  /* background: linear-gradient(135deg, #afc1dc 0%, #e2e5ed 100%); */
 }
 
 .logo-text {
