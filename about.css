@@ -104,7 +104,7 @@ body {
   bottom: -8px;
   height: 2px;
   border-radius: 10px;
-  background: #303030; /* dark underline per about nav in Figma */
+  background: #5F6FFF; /* dark underline per about nav in Figma */
 }
 
 .btn {
@@ -438,7 +438,7 @@ body {
   }
 }
 
-@media (max-width: 885px) {
+@media (max-width: 913px) {
   .nav-links,
   .desktop-cta {
     display: none;
