@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Prescripto - About</title>
+    <link rel="icon" type="image/svg+xml" href="./assests/Group 4123.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="top-nav">
+        <div class="logo">
+          <div class="logo-icon">
+            <img src="./assests/Group 4123.svg" alt="Prescripto logo" />
+          </div>
+          <span class="logo-text">Prescripto</span>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">HOME</a>
+          <a href="all-doctors.html" class="nav-link">All Doctors</a>
+          <a href="#" class="nav-link active">ABOUT</a>
+          <a href="#" class="nav-link">Contact</a>
+        </nav>
+        <button class="btn btn-outline desktop-cta">Create account</button>
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Open navigation menu"
+        >
+          <span class="menu-toggle-bar"></span>
+          <span class="menu-toggle-bar"></span>
+          <span class="menu-toggle-bar"></span>
+        </button>
+      </header>
+
+      <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <div class="mobile-menu-inner">
+          <button
+            class="mobile-menu-close"
+            id="mobileMenuClose"
+            aria-label="Close navigation menu"
+          >
+            <span class="close-icon-bar close-icon-bar-1"></span>
+            <span class="close-icon-bar close-icon-bar-2"></span>
+          </button>
+          <nav class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-link">HOME</a>
+            <a href="all-doctors.html" class="mobile-nav-link">All Doctors</a>
+            <a href="#" class="mobile-nav-link active">ABOUT</a>
+            <a href="#" class="mobile-nav-link">Contact</a>
+          </nav>
+          <button class="btn btn-primary mobile-cta">Create account</button>
+        </div>
+      </div>
+
+      <main class="about-page">
+        <section class="about-hero">
+          <div class="about-copy">
+            <h1 class="about-eyebrow">About Us</h1>
+            <p class="about-subtitle">
+              Welcome to Prescripto, your trusted partner in managing your
+              healthcare needs conveniently and efficiently. At Prescripto, we
+              understand the challenges individuals face when it comes to
+              scheduling doctor appointments and managing their health records.
+              <br /><br />
+              Prescripto is committed to excellence in healthcare technology. We
+              continuously strive to enhance our platform, integrating the
+              latest advancements to improve user experience and deliver
+              superior service. Whether you're booking your first appointment or
+              managing ongoing care, Prescripto is here to support you every
+              step of the way.
+              <br /><br />
+              Our Vision
+              <br />
+              Our vision at Prescripto is to create a seamless healthcare
+              experience for every user. We aim to bridge the gap between
+              patients and healthcare providers, making it easier for you to
+              access the care you need, when you need it.
+            </p>
+          </div>
+          <div class="about-image">
+            <div class="about-image-rect"></div>
+          </div>
+        </section>
+
+        <section class="choose-us">
+          <h2 class="choose-title">Why Choose Us</h2>
+
+          <div class="choose-cards">
+            <div class="choose-card">
+              <h3>Efficiency:</h3>
+              <p>
+                Streamlined appointment scheduling that fits into your busy
+                lifestyle.
+              </p>
+            </div>
+            <div class="choose-card">
+              <h3>Convenience:</h3>
+              <p>
+                Access to a network of trusted healthcare professionals in your
+                area.
+              </p>
+            </div>
+            <div class="choose-card">
+              <h3>Personalization:</h3>
+              <p>
+                Tailored recommendations and reminders to help you stay on top
+                of your health.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="logo">
+              <div class="logo-icon">
+                <img src="./assests/Group 4123.svg" alt="Prescripto logo" />
+              </div>
+              <span class="logo-text">Prescripto</span>
+            </div>
+            <p class="footer-description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <div>
+              <h4>COMPANY</h4>
+              <a href="#">Home</a>
+              <a href="#">About us</a>
+              <a href="#">Contact us</a>
+              <a href="#">Privacy policy</a>
+            </div>
+            <div class="footer-contact">
+              <h4>GET IN TOUCH</h4>
+              <a href="tel:+12124567890">+1-212-456-7890</a>
+              <a href="mailto:greatstackdev@gmail.com"
+                >greatstackdev@gmail.com</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <hr class="footer-divider" />
+
+        <p class="footer-bottom">
+          Copyright © 2024 GreatStack - All Right Reserved.
+        </p>
+      </footer>
+    </div>
+
+    <script>
+      (function () {
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuClose = document.getElementById('mobileMenuClose');
+
+        if (!menuToggle || !mobileMenu || !mobileMenuClose) return;
+
+        const openMenu = () => {
+          mobileMenu.classList.add('is-open');
+          mobileMenu.setAttribute('aria-hidden', 'false');
+          document.body.style.overflow = 'hidden';
+        };
+
+        const closeMenu = () => {
+          mobileMenu.classList.remove('is-open');
+          mobileMenu.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+        };
+
+        menuToggle.addEventListener('click', openMenu);
+        mobileMenuClose.addEventListener('click', closeMenu);
+
+        mobileMenu.addEventListener('click', (event) => {
+          const target = event.target;
+          if (target instanceof HTMLElement && target.matches('a.mobile-nav-link')) {
+            closeMenu();
+          }
+        });
+
+        window.addEventListener('keydown', (event) => {
+          if (event.key === 'Escape') {
+            closeMenu();
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
+
