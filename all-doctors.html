@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Prescripto - All Doctors</title>
+    <link rel="icon" type="image/svg+xml" href="./assests/Group 4123.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="top-nav">
+        <div class="logo">
+          <div class="logo-icon">
+            <img src="./assests/Group 4123.svg" alt="Prescripto logo" />
+          </div>
+          <span class="logo-text">Prescripto</span>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">HOME</a>
+          <a href="#" class="nav-link active">All Doctors</a>
+          <a href="about.html" class="nav-link">ABOUT</a>
+          <a href="#" class="nav-link">Contact</a>
+        </nav>
+        <button class="btn btn-outline desktop-cta">Create account</button>
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Open navigation menu"
+        >
+          <span class="menu-toggle-bar"></span>
+          <span class="menu-toggle-bar"></span>
+          <span class="menu-toggle-bar"></span>
+        </button>
+      </header>
+
+      <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <div class="mobile-menu-inner">
+          <button
+            class="mobile-menu-close"
+            id="mobileMenuClose"
+            aria-label="Close navigation menu"
+          >
+            <span class="close-icon-bar close-icon-bar-1"></span>
+            <span class="close-icon-bar close-icon-bar-2"></span>
+          </button>
+          <nav class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-link">HOME</a>
+            <a href="#" class="mobile-nav-link active">All Doctors</a>
+            <a href="about.html" class="mobile-nav-link">ABOUT</a>
+            <a href="#" class="mobile-nav-link">Contact</a>
+          </nav>
+          <button class="btn btn-primary mobile-cta">Create account</button>
+        </div>
+      </div>
+
+      <main class="doctors-page">
+        <div class="doctors-hero">
+          <h1 class="doctors-title">All Doctors</h1>
+          <p class="doctors-subtitle">
+            Browse through the doctors specialist.
+          </p>
+        </div>
+
+        <section class="doctors-layout">
+          <aside class="doctors-filters">
+            <div class="filter-chip filter-chip-active">General physician</div>
+            <div class="filter-chip">Gynecologist</div>
+            <div class="filter-chip">Dermatologist</div>
+            <div class="filter-chip">Pediatricians</div>
+            <div class="filter-chip">Neurologist</div>
+            <div class="filter-chip">Gastroenterologist</div>
+          </aside>
+
+          <div class="doctors-grid">
+            <!-- 14 doctor cards as per Figma layout -->
+            <article class="doctor-card">
+              <div class="doctor-card-top">
+                <div class="doctor-photo doctor-photo-2"></div>
+              </div>
+              <div class="doctor-card-body">
+                <h3>Dr. Richard James</h3>
+                <p class="doctor-speciality">General physician</p>
+                <p class="doctor-availability">
+                  <span class="availability-dot small"></span>Available
+                </p>
+              </div>
+            </article>
+
+            <article class="doctor-card">
+              <div class="doctor-card-top">
+                <div class="doctor-photo doctor-photo-3"></div>
+              </div>
+              <div class="doctor-card-body">
+                <h3>Dr. Richard James</h3>
+                <p class="doctor-speciality">General physician</p>
+                <p class="doctor-availability">
+                  <span class="availability-dot small"></span>Available
+                </p>
+              </div>
+            </article>
+
+            <article class="doctor-card">
+              <div class="doctor-card-top">
+                <div class="doctor-photo doctor-photo-4"></div>
+              </div>
+              <div class="doctor-card-body">
+                <h3>Dr. Richard James</h3>
+                <p class="doctor-speciality">General physician</p>
+                <p class="doctor-availability">
+                  <span class="availability-dot small"></span>Available
+                </p>
+              </div>
+            </article>
+
+            <article class="doctor-card">
+              <div class="doctor-card-top">
+                <div class="doctor-photo doctor-photo-5"></div>
+              </div>
+              <div class="doctor-card-body">
+                <h3>Dr. Richard James</h3>
+                <p class="doctor-speciality">General physician</p>
+                <p class="doctor-availability">
+                  <span class="availability-dot small"></span>Available
+                </p>
+              </div>
+            </article>
+
+            <article class="doctor-card">
+              <div class="doctor-card-top">
+                <div class="doctor-photo doctor-photo-1"></div>
+              </div>
+              <div class="doctor-card-body">
+                <h3>Dr. Richard James</h3>
+                <p class="doctor-speciality">General physician</p>
+                <p class="doctor-availability">
+                  <span class="availability-dot small"></span>Available
+                </p>
+              </div>
+            </article>
+
+            <article class="doctor-card">
+              <div class="doctor-card-top">
+                <div class="doctor-photo doctor-photo-2"></div>
+              </div>
+              <div class="doctor-card-body">
+                <h3>Dr. Richard James</h3>
+                <p class="doctor-speciality">General physician</p>
+                <p class="doctor-availability">
+                  <span class="availability-dot small"></span>Available
+                </p>
+              </div>
+            </article>
+
+            <article class="doctor-card">
+              <div class="doctor-card-top">
+                <div class="doctor-photo doctor-photo-3"></div>
+              </div>
+              <div class="doctor-card-body">
+                <h3>Dr. Richard James</h3>
+                <p class="doctor-speciality">General physician</p>
+                <p class="doctor-availability">
+                  <span class="availability-dot small"></span>Available
+                </p>
+              </div>
+            </article>
+
+            <article class="doctor-card">
+              <div class="doctor-card-top">
+                <div class="doctor-photo doctor-photo-4"></div>
+              </div>
+              <div class="doctor-card-body">
+                <h3>Dr. Richard James</h3>
+                <p class="doctor-speciality">General physician</p>
+                <p class="doctor-availability">
+                  <span class="availability-dot small"></span>Available
+                </p>
+              </div>
+            </article>
+
+            <article class="doctor-card">
+              <div class="doctor-card-top">
+                <div class="doctor-photo doctor-photo-5"></div>
+              </div>
+              <div class="doctor-card-body">
+                <h3>Dr. Richard James</h3>
+                <p class="doctor-speciality">General physician</p>
+                <p class="doctor-availability">
+                  <span class="availability-dot small"></span>Available
+                </p>
+              </div>
+            </article>
+
+            <article class="doctor-card">
+              <div class="doctor-card-top">
+                <div class="doctor-photo doctor-photo-1"></div>
+              </div>
+              <div class="doctor-card-body">
+                <h3>Dr. Richard James</h3>
+                <p class="doctor-speciality">General physician</p>
+                <p class="doctor-availability">
+                  <span class="availability-dot small"></span>Available
+                </p>
+              </div>
+            </article>
+
+            <article class="doctor-card">
+              <div class="doctor-card-top">
+                <div class="doctor-photo doctor-photo-2"></div>
+              </div>
+              <div class="doctor-card-body">
+                <h3>Dr. Richard James</h3>
+                <p class="doctor-speciality">General physician</p>
+                <p class="doctor-availability">
+                  <span class="availability-dot small"></span>Available
+                </p>
+              </div>
+            </article>
+
+            <article class="doctor-card">
+              <div class="doctor-card-top">
+                <div class="doctor-photo doctor-photo-3"></div>
+              </div>
+              <div class="doctor-card-body">
+                <h3>Dr. Richard James</h3>
+                <p class="doctor-speciality">General physician</p>
+                <p class="doctor-availability">
+                  <span class="availability-dot small"></span>Available
+                </p>
+              </div>
+            </article>
+
+            <article class="doctor-card">
+              <div class="doctor-card-top">
+                <div class="doctor-photo doctor-photo-4"></div>
+              </div>
+              <div class="doctor-card-body">
+                <h3>Dr. Richard James</h3>
+                <p class="doctor-speciality">General physician</p>
+                <p class="doctor-availability">
+                  <span class="availability-dot small"></span>Available
+                </p>
+              </div>
+            </article>
+
+            <article class="doctor-card">
+              <div class="doctor-card-top">
+                <div class="doctor-photo doctor-photo-5"></div>
+              </div>
+              <div class="doctor-card-body">
+                <h3>Dr. Richard James</h3>
+                <p class="doctor-speciality">General physician</p>
+                <p class="doctor-availability">
+                  <span class="availability-dot small"></span>Available
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="logo">
+              <div class="logo-icon">
+                <img src="./assests/Group 4123.svg" alt="Prescripto logo" />
+              </div>
+              <span class="logo-text">Prescripto</span>
+            </div>
+            <p class="footer-description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <div>
+              <h4>COMPANY</h4>
+              <a href="#">Home</a>
+              <a href="#">About us</a>
+              <a href="#">Contact us</a>
+              <a href="#">Privacy policy</a>
+            </div>
+            <div class="footer-contact">
+              <h4>GET IN TOUCH</h4>
+              <a href="tel:+12124567890">+1-212-456-7890</a>
+              <a href="mailto:greatstackdev@gmail.com"
+                >greatstackdev@gmail.com</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <hr class="footer-divider" />
+
+        <p class="footer-bottom">
+          Copyright © 2024 GreatStack - All Right Reserved.
+        </p>
+      </footer>
+    </div>
+
+    <script>
+      (function () {
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuClose = document.getElementById('mobileMenuClose');
+
+        if (!menuToggle || !mobileMenu || !mobileMenuClose) return;
+
+        const openMenu = () => {
+          mobileMenu.classList.add('is-open');
+          mobileMenu.setAttribute('aria-hidden', 'false');
+          document.body.style.overflow = 'hidden';
+        };
+
+        const closeMenu = () => {
+          mobileMenu.classList.remove('is-open');
+          mobileMenu.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+        };
+
+        menuToggle.addEventListener('click', openMenu);
+        mobileMenuClose.addEventListener('click', closeMenu);
+
+        mobileMenu.addEventListener('click', (event) => {
+          const target = event.target;
+          if (target instanceof HTMLElement && target.matches('a.mobile-nav-link')) {
+            closeMenu();
+          }
+        });
+
+        window.addEventListener('keydown', (event) => {
+          if (event.key === 'Escape') {
+            closeMenu();
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
+
