@@ -359,6 +359,9 @@ body {
   border-radius: 50%;
   background: linear-gradient(180deg, #afc1dc 0%, #e2e5ed 100%);
   margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .speciality-avatar-accent {
@@ -375,6 +378,10 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.speciality-avatar img{
+   height: 70%;
 }
 
 /* Doctors strip */
